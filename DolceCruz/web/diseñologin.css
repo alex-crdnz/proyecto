@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 mar. 2021, 23:10:28
+    Author     : Toxico
+*/
+
+body {
+     color: #01DF01 ;
+     text-align: center;
+     font-size: 25px;
+     background-color: #666666
+     
+}
+input{
+        background-color: black;
+	font-family: algerian;
+        color: #ff0033;
+        border-radius: 25px;
+        
+}
+select{
+        background-color: black;
+        font-family: castellar;
+        color: red ;
+        
+}
+opcion{
+        background-color: black;
+        font-family: castellar;
+        color: red ;
+        
+}
+h1{
+  font-family: castellar;
+  color: black ;
+}
