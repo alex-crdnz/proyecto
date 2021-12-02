@@ -31,6 +31,7 @@
                          user = (String)request.getAttribute("user");
                          out.print(usuarios.getNombre());
                          getServletContext().setAttribute("user",user);
+                         out.print(usuarios.getNombre());
                     }catch(NullPointerException e){
                         out.print(getServletContext().getAttribute("user"));
                     }
@@ -52,11 +53,19 @@
                 //rs = ps.executeQuery();
                 %>
                 <div style="text-align: center">
-                    <form method="post" action="construccion.jsp">
+                    <!--
+                    <form method="post" action="inventario.jsp">
                         <input type="submit" name="inv" value="inventario" >
                         <input type="submit" name="list" value="Lista Compras" >
                         <input type="submit" name="adm" value="Administrar" >
                     </form>
+                    -->
+                    <a href="inventario.jsp">
+            <img src = "images/inv.png" width="300" height="300"></a>
+                    <a href="lista-compras.jsp">_____
+            <img src = "images/lista.png" width="300" height="300"></a>
+                    <a href="administrar.jsp">_____
+            <img src = "images/admin.png" width="300" height="300"></a>
                 </div>
     </body>
 </html>

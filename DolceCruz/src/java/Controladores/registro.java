@@ -101,7 +101,7 @@ public class registro extends HttpServlet {
             Logger.getLogger(Servlet.class.getName()).log(Level.SEVERE, null, ex);
         }
        try{
-           sql = "INSERT INTO `dolcecruzdb`.`usuarios` (`usuario`, `pssw`, `nombre`) VALUES (?,?,?)";
+           sql = "INSERT INTO `dolcecruzdb`.`usuarios` (`usuario`, `acceso`, `nombre`) VALUES (?,?,?)";
            try {
                if (nombre.isEmpty() || user.isEmpty() || password.isEmpty()){
                    request.setAttribute("result", "Ingrese Correctamente los Datos");
