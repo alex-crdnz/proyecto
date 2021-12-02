@@ -107,7 +107,7 @@ public class Servlet extends HttpServlet {
             stmt = cn.createStatement();
             rs =  stmt.executeQuery(
                     "select * from usuarios where usuario ='"+user
-                            +"' and pssw = '" + pass + "'" );
+                            +"' and acceso = '" + pass + "'" );
             if(rs.next()){
                 Usuarios usuarios = new Usuarios(user, pass);
                 HttpSession session = request.getSession();
