@@ -11,6 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" type="text/css" href="principal.css">
         <title>DolceCuuz</title>
     </head>
     <body>
@@ -18,12 +19,15 @@
             <img src = "iconos/regresar.png" width="30" height="30"></a>
         <%
              Connection cn;
+             Connection cn2;
              String url = "jdbc:mysql://localhost:3306/DolceCruzDB";
              String clave = "Toxico3.";
              String usuario = "root";
              String driver = "com.mysql.cj.jdbc.Driver";
              Statement stmt = null;
+             Statement stmt2 = null;
              ResultSet rs;
+             ResultSet rs2;
              %>
             <h1 align = "center" >Usuarios</h1>
             <table border="1" width="600" align = "center" >
@@ -40,12 +44,13 @@
             <%
                 
                 try{
+                    int cont = 0;
                     Class.forName(driver);
-                    cn = DriverManager.getConnection(url,usuario,clave);
                     cn = DriverManager.getConnection(url,usuario,clave);
                     stmt = cn.createStatement();
                     rs =  stmt.executeQuery(
                     "select id,usuario,acceso,nombre from usuarios");
+                    
                     while(rs.next()){
                     %>
                
@@ -55,8 +60,16 @@
         <th><%=rs.getString(3)%></th>
         <th><%=rs.getString(4)%></th>
         <th colspan="2">
+            <%
+                cont ++;
+                if(cont != 1){
+                %>
             <a href="eliminar-user.jsp?id=<%=rs.getString(1)%>">
             <img src = "iconos/elim.png" width="30" height="30"></a>
+            <%
+                }
+            %>
+            
         </th>
     </tr>
     

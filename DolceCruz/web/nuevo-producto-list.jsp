@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" type="text/css" href="principal_1.css">
         <title>Registro de Productos de Lista Compras</title>
     </head>
 <body>
@@ -63,7 +64,7 @@
                             "', '"+cantidad+"', '"+getServletContext().getAttribute("user")+"','LISTACOMPRAS')");
                     cn.close();
                     stmt.close();
-                    request.getRequestDispatcher("lista-comnpras.jsp").forward(request, response);
+                    request.getRequestDispatcher("lista-compras.jsp").forward(request, response);
                 }catch(Exception e){out.print(e+"");}
                 
             }
