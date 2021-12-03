@@ -20,3 +20,7 @@ use DolceCruzDB;
 	Primary key(id),
     FOREIGN KEY (usuario) REFERENCES usuarios(id)
     )Engine=INNODB;
+    
+    INSERT INTO `dolcecruzdb`.`usuarios` (`id`, `usuario`, `acceso`, `nombre`) VALUES ('1', 'admin', '1234', 'admin');
+
+    
