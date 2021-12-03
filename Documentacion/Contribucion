@@ -1,0 +1,4 @@
+# generar el inisializacion git con git init
+# clonar repositorio con git clone https://github.com/alex-crdnz/proyecto.git
+# crear una branch nueva con git checkout -b [Nombre de la Rama]
+# Ve a tu repositorio en GitHub y verás un botón llamado "Pull request", has clic en é
