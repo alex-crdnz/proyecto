@@ -1,0 +1,9 @@
+# ejecutar script de la base de datos
+# abrir localhost de apache Tomcat en el navegador
+# seleccionar Manager app
+# seleccionar Seleccionar archivo en el apartado de Archivo WAR a desplegar y seleccionar el archivo war
+# seleccionar desplegar
+# ingresar al localhost con la direccion /DolceCruz al final
+# ingresar al login con las credenciales admin 1234
+# generar bpruebas mediante la inserccion de datos
+# introducir los datos de su inventario o lista de compras

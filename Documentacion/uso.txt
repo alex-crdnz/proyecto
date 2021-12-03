@@ -1,0 +1,6 @@
+# iniciar sesion con las credenciales de administrador o crear una cuenta
+# ingresar a cualquiera de los 3 apartados que requiera utilizar
+# 	inventario. es para tener el control de inventario el cual cuenta con botones para crear eliminar y editar
+# 	Lista compras. es para generar una lista de las compras pendientes el cual cuenta con botones para crear eliminar y editar
+# 	Administrar. es para tener el control de los usuarios, cuenta con botones para crear o eliminar, no se puede eliminar el administrador
+		
